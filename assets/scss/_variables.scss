@@ -1,0 +1,147 @@
+// This will contain mixins and variables 
+
+
+$color-primary: #1ab69d;
+$color-secondary: #ee4a62;
+$color-textSecondary: #ff5b5c;
+$color-tertiary: #f8b81f;
+$color-dark: #111212;
+$color-heading: #181818;
+$dark-color-heading: #fff;
+$color-border: #e5e5e5;
+$dark-color-border: #282f3a;
+$color-body: gray;
+$gradient-primary: linear-gradient(-90deg,#31b978 0%,#1ab69d 100%);
+$bg-color: #EAF0F2;
+$dark-bg-color: #020b17;
+$cta-color-bg: #F0F4F5;
+$color-bg-body: #fff;
+$dark-color-bg-body: #111822;
+$bg-color-2: #1c242f;
+$color-white: #fff;
+$color-black: #000;
+$footer-text: #181818;
+$dark-footer-text: gray;
+$edu-btn-color: #fff;
+$color-title: #bababa;
+
+// Lighten color scale
+$color-lighten01: #f0f4f5;
+$color-lighten02: #edf5f8;
+$color-lighten03: #f5f1eb;
+$color-lighten04: #f7f5f2;
+
+// Extra color set
+$color-extra01: #0ecd73;
+$color-extra02: #8e56ff;
+$color-extra03: #f92596;
+$color-extra04: #5866eb;
+$color-extra05: #f8941f;
+$color-extra06: #39c0fa;
+$color-extra07: #da04f8;
+$color-extra08: #4664e4;
+$color-extra09: #525151;
+$color-extra10: #404040;
+$color-extra11: #22272e;
+
+// Theme colors for success, danger etc.
+$color-success: #3EB75E;
+$color-danger: #FF0003;
+$color-warning: #FF8F3C;
+$color-info: #1BA2DB;
+
+// Placeholder color
+$color-placeholder: gray;
+
+// Social media colors
+$color-facebook: #1877f2;
+$color-twitter: #1da1f2;
+$color-youtube: #cd201f;
+$color-linkedin: #0a66c2;
+$color-pinterest: #E60022;
+$color-instagram: #C231A1;
+$color-vimeo: #00ADEF;
+
+
+//btn size mixin
+@mixin btn-size($size){
+    @if $size ==  'small' {
+        padding: 8px 10px;
+    }
+
+    @else if $size == 'medium'{
+        padding:10px 20px;
+    }
+
+    @else if $size == 'large' {
+        padding:15px 40px;
+    }
+
+}
+
+//image-overlay mixin
+
+@mixin overlay($opacity,$color){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    opacity: $opacity;
+    z-index: 1;
+}
+
+// Some Utility Classes 
+
+.text-heading{
+    color:$color-heading;
+}
+
+.text-body{
+    color:$color-body;
+}
+
+.text-tdark {
+    color: $color-dark;
+  }
+  
+  .text-tlight {
+    color: $color-lighten01;
+  }
+  
+  .bg-dark {
+    background: $color-dark;
+  }
+
+  .bg-secondary{
+    background: $color-secondary;
+  }
+
+  .bg-primary{
+    background: $color-primary;
+  }
+  
+  .bg-light1 {
+    background: $color-lighten01;
+  }
+  
+  .text-primary {
+    color: $color-primary;
+  }
+  
+  .text-secondary {
+    color: $color-secondary;
+  }
+  
+  .font-spartan {
+    font-family: "Spartan", sans-serif;
+  }
+  
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .text-tlight2 {
+    color: $color-title; // Using the variable here
+  }
