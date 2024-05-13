@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css','/assets/scss/global.scss'],
 
   components: {
     dirs: [
@@ -51,5 +51,16 @@ export default defineNuxtConfig({
 
   image: {
     format:['webp', 'avif', 'jpeg', 'jpg', 'png']
-  }
+  },
+
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/_variables.scss" as *;',
+        },
+      },
+    },
+  },
 })
