@@ -233,13 +233,13 @@ const localePath = useLocalePath();
 const { locale, setLocale } = useI18n();
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 
 .copyright-area {
     border-top: 1px solid #1f2020;
 }
 
 .footer a:hover{
-  color:var(--color-primary)
+  color:$color-primary;
 }
 </style>
