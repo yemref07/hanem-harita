@@ -2,7 +2,7 @@
   <TheTopHeader />
   <Container>
     <div class="flex flex-row py-6 justify-between items-center">
-      <nuxt-link to="/" title="Hanem Harita Anasayfa">
+      <nuxt-link :to="localePath('/')" title="Hanem Harita Anasayfa">
         <NuxtPicture
           format="webp,png,jpg"
           src="/images/logo/hanem-logo.png"
@@ -12,7 +12,7 @@
       </nuxt-link>
 
       <div class="hidden lg:flex items-center gap-4 xl:gap-8">
-        <nuxt-link class="nav-link" :to="localePath('index')" title="Anasayfa">
+        <nuxt-link class="nav-link" :to="localePath('/')" title="Anasayfa">
           {{ $t("home") }}
         </nuxt-link>
         <nuxt-link
@@ -34,7 +34,7 @@
             class="w-64 absolute top-12 shadow px-3 py-3 text-tdark rounded-md services-submenu bg-white z-30"
           >
             <li class="mb-6 submenu-link">
-              <nuxt-link to="localePath('index')" title="lorem">
+              <nuxt-link to="localePath('/)" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -45,7 +45,7 @@
               </nuxt-link>
             </li>
             <li class="mb-6 submenu-link">
-              <nuxt-link to="localePath('index')" title="lorem">
+              <nuxt-link to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -56,7 +56,7 @@
               </nuxt-link>
             </li>
             <li class="mb-6 submenu-link">
-              <nuxt-link to="localePath('index')" title="lorem">
+              <nuxt-link to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -67,7 +67,7 @@
               </nuxt-link>
             </li>
             <li class="submenu-link">
-              <nuxt-link to="localePath('index')" title="lorem">
+              <nuxt-link to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -136,16 +136,9 @@ const closeServiceMenu = () => {
 
 
 
-
-
-
-
-
-
-
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .nav-link {
   font-size: 15px;
   cursor: pointer;
@@ -175,10 +168,11 @@ const closeServiceMenu = () => {
 }
 
 .nav-link:hover {
-  color: var(--color-primary);
+  color: $color-primary;
 }
+
 .submenu-link:hover{
-  color: var(--color-primary);
+  color: $color-primary;
 }
 
 .services-submenu{
