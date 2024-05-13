@@ -1,16 +1,15 @@
 <template>
-    <nuxt-link class="btn-primary" :class="setBtnSize" :to="localePath(`/${link}`)" v-if="link">
+    <nuxt-link class="btn-secondary" :class="setBtnSize" :to="localePath(`/${link}`)" v-if="link">
             <slot />
     </nuxt-link>
 
-    <button class="btn-primary" :class="setBtnSize" @click="$emit('btnClick')" v-else>
+    <button class="btn-secondary" :class="setBtnSize" @click="$emit('btnClick')" v-else>
         <slot />
     </button>
 </template>
 
 <script setup lang="ts">
 const localePath = useLocalePath();
-const { locale, setLocale } = useI18n();
 
 const props = defineProps({
     size: {
@@ -50,8 +49,8 @@ const setBtnSize = computed(() => {
     @include btn-size(large);
 }
 
-.btn-primary {
-    background: $color-primary;
+.btn-secondary {
+    background: $color-secondary;
     color: white;
     border-radius: 10px;
     cursor: pointer;
@@ -61,7 +60,7 @@ const setBtnSize = computed(() => {
     transition: all 0.2s;
 }
 
-.btn-primary:hover {
-    background: $color-secondary;
+.btn-secondary:hover {
+    background: $color-primary;
 }
 </style>
