@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex flex-col">
     <button
-      class="px-6 py-3 text-heading cursor-pointer rounded-md font-semibold font-spartan text-lg border-2 transition-all delay-75 duration-75"
+      class="px-6 py-3 text-heading cursor-pointer rounded-md font-semibold font-spartan lg:text-lg border-2 transition-all delay-75 duration-75"
       @click="toggle" :class="{ 'bg-white': !isVisible, 'bg-primary text-tlight': isVisible }">
       Hanem Harita hangi hizmetleri sunmaktadır?
       <Icon name="material-symbols:keyboard-arrow-down-rounded" width="30" height="30"

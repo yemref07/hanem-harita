@@ -147,7 +147,7 @@
     </swiper-slide>
   </swiper-container>
 
-  <section class="my-12">
+  <section class="my-16">
     <Container>
       <div
         class="grid md:grid-cols-2 lg:grid-cols-4 items-center justify-start gap-8"
@@ -187,7 +187,7 @@
     </Container>
   </section>
 
-  <section class="lg:mt-20 xl:mt-24">
+  <section class="my-16">
     <Container>
       <div class="grid md:grid-cols-2 gap-12">
         <div class="col-span-1">
@@ -204,11 +204,11 @@
         <div class="col-span-1">
           <div class="flex flex-col items-start justify-center">
             <h2
-              class="text-heading text-2xl lg:text-3xl xl:text-4xl font-spartan font-semibold"
+              class="text-heading text-xl lg:text-3xl xl:text-4xl font-spartan font-semibold"
             >
               Hakkımızda
             </h2>
-            <h3 class="mt-2 text-2xl text-primary">Hanem Harita</h3>
+            <h3 class="mt-2 text-xl lg:text-2xl text-primary">Hanem Harita</h3>
 
             <p class="mt-4 text-poppins text-body">
               Hanem Harita, haritacılık ve emlak sektöründe uzun yıllara dayanan
@@ -268,11 +268,11 @@
     </Container>
   </section>
 
-  <section class="my-24">
+  <section class="my-16">
     <Container>
-      <div class="flex justify-between mb-12">
+      <div class="flex justify-between items-center mb-12">
         <h2
-          class="text-center xl:text-4xl text-heading font-semibold font-spartan"
+          class="text-center text-xl lg:text-3xl xl:text-4xl text-heading font-semibold font-spartan"
         >
           Popüler İlanlar
         </h2>
@@ -344,7 +344,7 @@
     </Container>
   </section>
 
-  <section class="relative mt-28">
+  <section class="relative hidden md:block my-16">
     <div>
       <NuxtPicture
         format="avif,webp,jpg"
@@ -366,7 +366,7 @@
                 height="90"
                 class="text-primary cursor-pointer"
               />
-              <p class="text-white text-2xl mt-2">10+ Fazla İlan</p>
+              <p class="text-white text-lg lg:text-2xl mt-2">10+ Fazla İlan</p>
             </div>
 
             <div class="flex flex-col items-center">
@@ -376,7 +376,9 @@
                 height="90"
                 class="text-primary cursor-pointer"
               />
-              <p class="text-white text-2xl mt-2">300 + İş Partneri</p>
+              <p class="text-white text-lg lg:text-2xl mt-2">
+                300 + İş Partneri
+              </p>
             </div>
 
             <div class="flex flex-col items-center">
@@ -386,7 +388,9 @@
                 height="90"
                 class="text-primary cursor-pointer"
               />
-              <p class="text-white text-2xl mt-2">20 + Fazla Proje</p>
+              <p class="text-white text-lg lg:text-2xl mt-2">
+                20 + Fazla Proje
+              </p>
             </div>
 
             <div class="flex flex-col items-center">
@@ -396,7 +400,9 @@
                 height="90"
                 class="text-primary cursor-pointer"
               />
-              <p class="text-white text-2xl mt-2">Müşteri Memnuniyeti</p>
+              <p class="text-white text-lg lg:text-2xl mt-2">
+                Müşteri Memnuniyeti
+              </p>
             </div>
           </div>
         </Container>
@@ -405,14 +411,14 @@
     </div>
   </section>
 
-  <section class="mt-28">
+  <section class="my-16">
     <Container>
       <h2
-        class="text-center xl:text-4xl text-heading font-semibold font-spartan mb-12"
+        class="text-center text-xl lg:text-3xl xl:text-4xl text-heading font-semibold font-spartan mb-12"
       >
         Sıkça Sorulan Sorular
       </h2>
-      <div class="grid lg:grid-cols-2 justify-start items-center">
+      <div class="grid lg:grid-cols-2 justify-start items-center gap-8">
         <div class="col-span-1">
           <Dropdown class="mb-4" />
           <Dropdown class="mb-4" />
@@ -422,7 +428,7 @@
           <NuxtPicture
             format="webp,jpg,png,avif"
             src="/images/faq/faq2.png"
-            :imgAttrs="{ class: 'w-full h-auto' }"
+            :imgAttrs="{ class: 'w-1/2 mx-auto md:w-full h-auto' }"
             sizes="300px md:400px lg:600px"
             alt="slide 1"
             loading="lazy"
@@ -432,10 +438,10 @@
     </Container>
   </section>
 
-  <section class="pt-28">
+  <section class="my-16">
     <Container>
       <h2
-        class="text-center xl:text-4xl text-heading font-semibold font-spartan mb-12"
+        class="text-center text-xl lg:text-3xl xl:text-4xl text-heading font-semibold font-spartan mb-12"
       >
         Uzman Kadromuz
       </h2>
@@ -477,34 +483,54 @@
     </Container>
   </section>
 
-  <section class="relative">
-    <Container>
-      <div class="banner-1 p-8 flex flex-col justify-center items-center">
-        <h2 class="font-sportan font-semibold text-2xl xl:text-3xl text-center">
-          Haritacılık ve Emlak Hizmetleri İçin Güvenilir Adres
-        </h2>
-        <h2
-          class="font-sportan text-secondary font-semibold text-2xl xl:text-3xl my-2 mb-6 text-center"
-        >
-          Hanem Harita
-        </h2>
-        <BtnPrimary link="iletisim" size="large">Hemen Ara</BtnPrimary>
-      </div>
-    </Container>
-  </section>
+  <Banner1 />
 
-  <section class='my-24'>
+  <section class="my-16">
     <Container>
       <h2
         class="text-center xl:text-4xl text-heading font-semibold font-spartan mb-12"
       >
         Blog Paylaşımları
       </h2>
-      <div class="grid grid-cols-3 gap-8">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-      </div>
+
+      <swiper-container
+        :space-between="14"
+        :loop="true"
+        :slides-per-view="1"
+        :centered-slides="false"
+        :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false,
+        }"
+        :pagination="false"
+        :breakpoints="{
+          600: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        }"
+      >
+        <swiper-slide>
+          <BlogCard />
+        </swiper-slide>
+        <swiper-slide>
+          <BlogCard />
+        </swiper-slide>
+        <swiper-slide>
+          <BlogCard />
+        </swiper-slide>
+        <swiper-slide>
+          <BlogCard />
+        </swiper-slide>
+        <swiper-slide>
+          <BlogCard />
+        </swiper-slide>
+      </swiper-container>
     </Container>
   </section>
 </template>
@@ -515,6 +541,7 @@ import Container from "~/components/UI/Container.vue";
 import ServiceCard from "~/components/cards/ServiceCard.vue";
 import AdvertisementCard from "~/components/cards/AdvertisementCard.vue";
 import Dropdown from "~/components/UI/Dropdown.vue";
+import Banner1 from "~/components/banners/Banner1"
 
 import { register } from "swiper/element/bundle";
 import EmployeeCard from "~/components/cards/EmployeeCard.vue";
@@ -528,7 +555,7 @@ const { locale, setLocale } = useI18n();
 
 <style lang="scss" scoped>
 .image-overlay {
- @include overlay(0.5,black)
+  @include overlay(0.5, black);
 }
 
 .vertical-align-middle {
@@ -536,15 +563,4 @@ const { locale, setLocale } = useI18n();
   display: inline-block; /* Needed for some browsers */
 }
 
-.banner-1 {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  min-height: 400px;
-  background-image: url(/images/background/cta.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 </style>
