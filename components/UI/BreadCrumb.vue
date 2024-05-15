@@ -1,11 +1,11 @@
 <template>
   <div class="bread-bg my-6 group">
     <div class="flex flex-col justify-center items-center gap-4">
-      <h1 class="text-center text-3xl xl:text-4xl font-spartan font-semibold capitalize">İletişim</h1>
+      <h1 class="text-center text-3xl xl:text-4xl font-spartan font-semibold capitalize">{{title}}</h1>
       <p class="mt-2 font-poppins">
         <nuxt-link :to="localePath('/')" title="Anasayfa">Anasayfa </nuxt-link>
         >
-        <span class="text-body"> İletişim </span>
+        <span class="text-body"> {{title}}</span>
       </p>
     </div>
     <NuxtImg
@@ -25,8 +25,15 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const localePath = useLocalePath();
+const props = defineProps({
+  title:{
+    type:String,
+    require:true
+  }
+})
+
 </script>
 
 <style lang="scss" scoped>
