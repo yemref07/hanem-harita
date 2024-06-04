@@ -57,7 +57,8 @@ export default defineNuxtConfig({
   },
 
   image: {
-    format:['webp', 'avif', 'jpeg', 'jpg', 'png']
+    format:['webp', 'avif', 'jpeg', 'jpg', 'png'],
+    provider: 'netlify',
   },
 
 
