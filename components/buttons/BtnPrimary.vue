@@ -59,6 +59,7 @@ const setBtnSize = computed(() => {
     font-family: "Spartan", sans-serif;
     font-weight: 600;
     transition: all 0.2s;
+    text-align: center;
 }
 
 .btn-primary:hover {

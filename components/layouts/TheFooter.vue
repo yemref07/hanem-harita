@@ -5,9 +5,9 @@
         <div class="col-span-3 font-poppins text-tlight2">
           <NuxtImg
             src="/images/logo/hanem-logo-white.png"
-            sizes="120px md:150px"
+            sizes="sm:90px md:100px lg:120px xl:175px"
             class="mb-8"
-            preload
+            loading="lazy"
           />
           <p class='text-sm md:text-base'>
             Haritacalık hizmetlerinden, Emlak danışmanlığına birçok taşınmaz ihtiyacınız için güvenilir adres.
@@ -144,38 +144,29 @@
             <span class="mr-2">Adres :</span> Lorem ipsum dolor sit amet.
           </nuxt-link to="">
 
-          <nuxt-link to="" class="block my-2 text-sm text-tlight2 font-poppins cursor-pointer">
+          <nuxt-link to="tel:905358703900" class="block my-2 text-sm text-tlight2 font-poppins cursor-pointer">
             <Icon
               name="lets-icons:phone-duotone"
               width="24"
               height="24"
               class="text-secondary cursor-pointer mr-3"
             />
-            <span class="mr-2">Telefon:</span> +90 534 499 76 52
-          </nuxt-link to="">
+            <span class="mr-2">Telefon:</span> +90 535 870 39 00
+          </nuxt-link>
 
-          <nuxt-link to="" class='block text-sm text-tlight2 font-poppins cursor-pointer'>
+          <nuxt-link to="mailto:hanemharitaemlak@hotmail.com" class='block text-xs text-tlight2 font-poppins cursor-pointer'>
             <Icon
               name="iconamoon:email-light"
               width="24"
               height="24"
               class="text-secondary cursor-pointe mr-3"
             />
-            <span>Email:</span> info@email.com
+            <span>Email:</span> hanemharitaemlak@hotmail.com
           </nuxt-link to="">
 
           <div class='flex mt-6 justify-start items-center'>
-            <nuxt-link to="" class='cursor-pointer'>
-                <Icon
-                  name="ri:twitter-x-line"
-                  width="20"
-                  height="20"
-                  class="cursor-pointe mr-3 text-tlight"
-                />
-
-            </nuxt-link>
             
-            <nuxt-link to="" class='cursor-pointer'>
+            <nuxt-link to="https://www.facebook.com/share/6YvVzVpV2uzoCXrP/?mibextid=qi2Omg" class='cursor-pointer'>
                 <Icon
                   name="iconoir:facebook"
                   width="24"
@@ -186,7 +177,7 @@
             </nuxt-link>
 
 
-            <nuxt-link to="" class='cursor-pointer'>
+            <nuxt-link to="https://www.instagram.com/hanemharitaemlak07?igsh=MTB0YTI0d29jdWQ0bw==" class='cursor-pointer'>
                 <Icon
                   name="iconoir:instagram"
                   width="24"

@@ -18,7 +18,7 @@
             name="ic:baseline-share"
             width="30"
             height="30"
-            class="text-white cursor-pointer z-10 group-hover:text-teal-400"
+            class="text-white cursor-pointer z-10 group-hover:text-red-500"
           />
         </div>
 

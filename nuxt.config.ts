@@ -18,7 +18,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/i18n", '@nuxtjs/google-fonts', "@nuxt/image",'nuxt-icon'],
+  modules: [
+    "@nuxtjs/i18n",
+    '@nuxtjs/google-fonts',
+    "@nuxt/image",
+    'nuxt-icon',
+    "@stefanobartoletti/nuxt-social-share",
+    '@nuxt/test-utils/module'
+  ],
 
   i18n: {
     defaultLocale: 'tr',
@@ -50,7 +57,8 @@ export default defineNuxtConfig({
   },
 
   image: {
-    format:['webp', 'avif', 'jpeg', 'jpg', 'png']
+    format:['webp', 'avif', 'jpeg', 'jpg', 'png'],
+    provider: 'netlify',
   },
 
 
