@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-start justify-center pb-6 shadow-md bg-white group cursor-pointer rounded-md transition-all delay-75 duration-300 hover:border-b-4 hover:border-teal-300"
+    class="flex flex-col items-start justify-center pb-6 shadow-md bg-white group cursor-pointer rounded-md transition-all delay-75 duration-300 hover:border-b-4 hover:border-red-400"
   >
     <nuxt-link
       :to="localePath(`/hizmetlerimiz/${getLink(title)}`)"

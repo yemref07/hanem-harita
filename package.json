@@ -7,22 +7,31 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.1",
+    "@stefanobartoletti/nuxt-social-share": "^0.7.0",
+    "@vitest/coverage-v8": "^1.6.0",
     "nuxt": "^3.11.2",
     "swiper": "^11.1.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^3.13.1",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.19",
+    "happy-dom": "^14.11.2",
+    "jsdom": "^24.1.0",
     "nuxt-icon": "^0.6.10",
+    "playwright-core": "^1.44.1",
     "postcss": "^8.4.38",
     "sass": "^1.77.0",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "vitest": "^1.6.0"
   }
 }

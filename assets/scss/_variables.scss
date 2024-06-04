@@ -1,8 +1,8 @@
 // This will contain mixins and variables 
 
 
-$color-primary: #1ab69d;
-$color-secondary: #ee4a62;
+$color-primary: #da1a3e;
+$color-secondary: rgb(85, 85, 206);
 $color-textSecondary: #ff5b5c;
 $color-tertiary: #f8b81f;
 $color-dark: #111212;
@@ -143,5 +143,13 @@ $color-vimeo: #00ADEF;
   }
   
   .text-tlight2 {
-    color: $color-title; // Using the variable here
+    color: $color-title;
+  }
+
+  .inline-link{
+    transition: all .3s ease-in-out;
+  }
+
+  .inline-link:hover{
+    color:$color-primary;
   }

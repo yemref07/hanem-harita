@@ -34,7 +34,7 @@
             class="w-64 absolute top-12 shadow px-3 py-3 text-tdark rounded-md services-submenu bg-white z-30"
           >
             <li class="mb-6 submenu-link">
-              <nuxt-link to="localePath('/)" title="lorem">
+              <nuxt-link :to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -45,7 +45,7 @@
               </nuxt-link>
             </li>
             <li class="mb-6 submenu-link">
-              <nuxt-link to="localePath('/')" title="lorem">
+              <nuxt-link :to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -56,7 +56,7 @@
               </nuxt-link>
             </li>
             <li class="mb-6 submenu-link">
-              <nuxt-link to="localePath('/')" title="lorem">
+              <nuxt-link :to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -67,7 +67,7 @@
               </nuxt-link>
             </li>
             <li class="submenu-link">
-              <nuxt-link to="localePath('/')" title="lorem">
+              <nuxt-link :to="localePath('/')" title="lorem">
                 <Icon
                   name="icon-park-outline:land-surveying"
                   width="14"
@@ -81,7 +81,7 @@
         </div>
         <nuxt-link
           class="nav-link"
-          :to="localePath('ilanlarimiz')"
+          :to="localePath('ilanlar')"
           title="Hanem Harita İlanlar"
           >{{ $t("advertisement") }}</nuxt-link
         >

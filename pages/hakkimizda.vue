@@ -1,4 +1,5 @@
 <template>
+    <div class="">
     <BreadCrumb title='Hakkımızda' />
     
     <Container class='py-12'>
@@ -20,13 +21,17 @@
                 </div>
                 <br>
                 <div class="border-l-4 border-teal-200 pl-5 py-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore rem alias velit modi voluptatibus, optio tempore impedit autem ad inventore architecto reiciendis non dolores labore hic sequi ducimus minimao?</p>
+                  
+
+
+                    <p>  Hanem Harita, haritacılık ve emlak sektöründe uzun yıllara dayanan deneyime sahip uzman bir kadrodan oluşan, müşteri memnuniyetine ve modern mühendislik tekniklerine önem veren bir firmadır.</p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore rem alias velit modi voluptatibus, optio tempore impedit autem ad inventore architecto reiciendis non dolores labore hic sequi ducimus minimao?</p>
+
+                    <p>Müşterilerimizin ihtiyaçlarını ve beklentilerini her zaman ön planda tutarak, onlara en uygun ve kaliteli hizmeti sunmaya çalışıyoruz. Her projenin özel olduğunu biliyor ve her müşteriye özel çözümler üretiyoruz.</p>
+
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore rem alias velit modi voluptatibus, optio tempore impedit autem ad inventore architecto reiciendis non dolores labore hic sequi ducimus minimao?</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore rem alias velit modi voluptatibus, optio tempore impedit autem ad inventore architecto reiciendis non dolores labore hic sequi ducimus minimao?</p>
+                
+
                 </div>
                 <BtnPrimary size="large" class='mt-5 inline-block' link="iletisim">Detaylı Bilg Al</BtnPrimary>
             </div>
@@ -49,6 +54,8 @@
     </Container>
 
     <Banner1 class="my-16"/>
+
+    </div>
 </template>
 
 <script setup>

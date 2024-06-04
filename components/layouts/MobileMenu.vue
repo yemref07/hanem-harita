@@ -85,10 +85,12 @@
 
       <div class="flex flex-col gap-4 mt-8">
           <BtnPrimary
+            link=""
             size="base"
             >{{ $t("callNow") }}</BtnPrimary
           >
           <BtnPrimary
+            link=""
             size="base"
             >{{ $t("getAddress") }}</BtnPrimary
           >

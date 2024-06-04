@@ -1,4 +1,6 @@
 <template>
+  <div class="">
+    
   <swiper-container
     :slides-per-view="1"
     :centered-slides="true"
@@ -533,6 +535,8 @@
       </swiper-container>
     </Container>
   </section>
+
+</div>
 </template>
 
 <script setup>
