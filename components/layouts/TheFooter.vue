@@ -5,9 +5,9 @@
         <div class="col-span-3 font-poppins text-tlight2">
           <NuxtImg
             src="/images/logo/hanem-logo-white.png"
-            sizes="120px md:150px"
+            sizes="sm:90px md:100px lg:120px xl:175px"
             class="mb-8"
-            preload
+            loading="lazy"
           />
           <p class='text-sm md:text-base'>
             Haritacalık hizmetlerinden, Emlak danışmanlığına birçok taşınmaz ihtiyacınız için güvenilir adres.
